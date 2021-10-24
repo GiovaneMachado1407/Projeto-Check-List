@@ -1,0 +1,213 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="css/estiloga.css">
+
+    <title>Shop Montagem Geral</title>
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-lg" style="background: #126904;">
+            <a class="navbar-brand" href="#"><img src="img/anjo.jpg"
+                    style="width:4em; height:4em; margin-left: 10px;"></a>
+
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html" style="color: black; font-size: 24px;">
+                            Home </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" style="color: black; font-size: 24px;">GA - Check List</a>
+                    </li>
+
+                    <div data-spy="scroll" data-target="#navbarNavDropdown" data-offset="0"></div>
+
+                </ul>
+            </div>
+            <a class="navbar-brand" href="#"><img src="img/seguranca.png" style="width:4em; height:4em;"></a>
+        </nav>
+    </header>
+
+    <section>
+        <aside>
+            <h2 style="text-align: center; font-size: 18px;">Check list Anjo da Guarda</h2>
+            <div>
+                <input class="form-control" type="text" placeholder="Digite sua área"
+                    aria-label="default input example">
+                <br>
+                <input class="form-control" type="text" placeholder="Digite seu time"
+                    aria-label="default input example">
+                <br>
+
+                <label for="exampleDataList" class="form-label">Turno</label>
+                <input class="form-control" list="datalistOptions" id="exampleDataList" placeholder="Escolha seu turno">
+                <datalist id="datalistOptions">
+                    <option value="1°">
+                    <option value="2°">
+                    <option value="3°">
+                </datalist>
+
+                <br>
+
+                <button type="button" class="btn btn-success">Gerar Check List do Anjo da Guarda</button>
+
+                <br>
+                <br>
+
+                <button class="btn btn-success" type="button">Salvar</button>
+
+                <br>
+                <br>
+
+                <form action="email para liderança" method="post">
+                    <label for="email" style="padding-top:3%">Email do Líder</label>
+                    <input type="email" id="email" name="Email" class="form-control">
+
+
+                    <br>
+
+                    <input type="submit" class="btn btn-success" value="Enviar">
+
+                </form>
+
+            </div>
+        </aside>
+
+        <main>
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        Nome: Giovane
+                    </div>
+                    <div class="col">
+                        Líder: Everton Martini
+                    </div>
+                    <div class="col">
+                        Mês: Setembro
+                    </div>
+                </div>
+                <br>
+                <div class="row">
+                    <div class="col">
+                        Setor: Tap 3
+                    </div>
+                    <div class="col">
+                        Time: 17
+                    </div>
+                    <div class="col">
+                        Turno: 1°
+                    </div>
+                </div>
+            </div>
+
+            <br>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th scope="col"></th>
+                        <th scope="col"></th>
+                        <th scope="col">1</th>
+                        <th scope="col">2</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">1</th>
+                        <td>Não uso de EPI</td>
+                        <td style="color: green;">O</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">2</th>
+                        <td>Descaracterização do EPI</td>
+                        <td></td>
+                        <td>
+                            <a href="resposta.html" style="color: red; text-decoration: none;">X</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">3</th>
+                        <td colspan="2">Não Utilização dos Disposit. de travamento</td>
+                        <td style="color: green;">O</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">4</th>
+                        <td>Uso de ferramentas inadequadas</td>
+                        <td style="color: green;">O</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">5</th>
+                        <td>Uso de adornos</td>
+                        <td></td>
+                        <td>
+                            <a href="resposta.html" style="color: red; text-decoration: none;">X</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">6</th>
+                        <td colspan="2">Fumar em local proibido</td>
+                        <td style="color: green;">O</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">7</th>
+                        <td>Adiantar operação</td>
+                        <td style="color: green;">O</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">8</th>
+                        <td>Uso inadequado de produto químico</td>
+                        <td></td>
+                        <td>
+                            <a href="resposta.html" style="color: red; text-decoration: none;">X</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">9</th>
+                        <td colspan="2">Postura inadequada no trabalho</td>
+                        <td style="color: green;">O</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">10</th>
+                        <td>Desrespeito á sinalização de segurança</td>
+                        <td style="color: green;">O</td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+        </main>
+
+        <footer id="rodape">
+            Criadores : Giovane Machado e Moacir Silva
+            <img src="img/gm logo.jpg">
+        </footer>
+    </section>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+        crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-W8fXfP3gkOKtndU4JGtKDvXbO53Wy8SZCQHczT5FMiiqmQfUpWbYdTil/SxwZgAN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js" integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/" crossorigin="anonymous"></script>
+    -->
+</body>
+
+</html>
